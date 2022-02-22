@@ -17,11 +17,13 @@ export class MainDishBuilder implements MealBuilderProtocol {
     this._meal.add(rice, beans, meat);
     return this;
   }
+
   makeBeverage(): this {
     const beverage = new Beverage("Suco", 7);
     this._meal.add(beverage);
     return this;
   }
+
   makeDessert(): this {
     const dessert = new Dessert("Pudim", 10);
     this._meal.add(dessert);
