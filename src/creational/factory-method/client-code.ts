@@ -25,5 +25,6 @@ for (let i = 0; i < 10; i++) {
   vehicle.pickUp(name);
   vehicle.stop();
   const newCar = carFactory.pickUp(name, `Novo Carro ${randomNumbers(100)}`);
+  newCar.stop();
   console.log("---");
 }
